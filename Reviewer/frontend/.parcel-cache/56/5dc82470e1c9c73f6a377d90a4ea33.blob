@@ -1,0 +1,23 @@
+body{
+    background-color: white;
+}
+
+.Sidebarmenu{
+    height: 100%;
+    width:300px;
+    background-color: darkslategray;
+    color: white;
+}
+
+.Sidebarmenu li a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}
+.Sidebarmenu li a{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+}

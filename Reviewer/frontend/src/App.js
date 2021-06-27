@@ -1,10 +1,14 @@
 import React from 'react';
+import './App.css';
+import Sidebarmenu from './Components/Sidebarmenu';
+
+
 export default class App extends React.Component{
     render() {
         return ( 
-            <div>
-                <h1>Hello. This is parcel react app</h1>
+            <div className="App">
+               <Sidebarmenu/>
             </div>
-        )
+        );
     }
 }

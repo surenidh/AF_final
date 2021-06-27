@@ -1,0 +1,8 @@
+
+.Sidebarmenu{
+    height: 100%;
+    width:300px;
+    background-color: darkslategray;
+    color: white;
+}
+/*# sourceMappingURL=index.HASH_REF_ad40d3aa007fac6430922fcf542a857c.css.map */

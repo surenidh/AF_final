@@ -26271,25 +26271,29 @@ try {
   _parcelHelpers.defineInteropFlag(exports);
   var _react = require('react');
   var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('./App.css');
+  var _ComponentsSidebarmenu = require('./Components/Sidebarmenu');
+  var _ComponentsSidebarmenuDefault = _parcelHelpers.interopDefault(_ComponentsSidebarmenu);
   var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\App.js";
   class App extends _reactDefault.default.Component {
     render() {
       return (
         /*#__PURE__*/_reactDefault.default.createElement("div", {
+          className: "App",
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 5,
+            lineNumber: 9,
             columnNumber: 13
           }
-        }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        }, /*#__PURE__*/_reactDefault.default.createElement(_ComponentsSidebarmenuDefault.default, {
           __self: this,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 6,
-            columnNumber: 17
+            lineNumber: 10,
+            columnNumber: 16
           }
-        }, "Hello. This is parcel react app"))
+        }))
       );
     }
   }
@@ -26300,7 +26304,109 @@ try {
   window.$RefreshSig$ = prevRefreshSig;
 }
 
-},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5gA8y":[function(require,module,exports) {
+},{"react":"3b2NM","./Components/Sidebarmenu":"4PH66","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./App.css":"h6p59"}],"4PH66":[function(require,module,exports) {
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  require('../App.css');
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\Sidebarmenu.js";
+  function Sidebarmenu() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "Sidebarmenu",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6,
+          columnNumber: 12
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("ul", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/#",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 13
+        }
+      }, "HOME")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/research",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 13
+        }
+      }, " RESEARCH PAPERS")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/workshop",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10,
+          columnNumber: 13
+        }
+      }, "WORKSHOP")), /*#__PURE__*/_reactDefault.default.createElement("li", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("a", {
+        href: "/logout",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 13
+        }
+      }, "LOGOUT"))))
+    );
+  }
+  _c = Sidebarmenu;
+  exports.default = Sidebarmenu;
+  var _c;
+  $RefreshReg$(_c, "Sidebarmenu");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+
+},{"react":"3b2NM","@parcel/transformer-js/lib/esmodule-helpers.js":"5gA8y","../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../App.css":"h6p59"}],"5gA8y":[function(require,module,exports) {
 "use strict";
 
 exports.interopDefault = function (a) {
@@ -26499,6 +26605,6 @@ function registerExportsForReactRefresh(module) {
   }
 }
 
-},{"react-refresh/runtime":"592mh"}]},["1j6wU","3Imd1","5rkFb"], "5rkFb", "parcelRequire0de8")
+},{"react-refresh/runtime":"592mh"}],"h6p59":[function() {},{}],"h6p59":[function() {},{}]},["1j6wU","3Imd1","5rkFb"], "5rkFb", "parcelRequire0de8")
 
 //# sourceMappingURL=index.3fafb3e2.js.map
