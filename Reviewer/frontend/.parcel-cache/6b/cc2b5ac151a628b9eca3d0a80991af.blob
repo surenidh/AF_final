@@ -1,0 +1,24 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  require('react');
+  require('../../../backend/Models/profileModel');
+  const express = require('express');
+  const app = express();
+  function ViewProfile() {
+    const viewprofileRouter = require('../../../backend/Routes/');
+    app.use("/viewprofile", viewprofileRouter);
+  }
+  _c = ViewProfile;
+  exports.default = ViewProfile;
+  var _c;
+  $RefreshReg$(_c, "ViewProfile");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

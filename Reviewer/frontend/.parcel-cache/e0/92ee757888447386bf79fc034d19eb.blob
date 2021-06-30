@@ -1,0 +1,67 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _ = require('');
+  var _Default = _parcelHelpers.interopDefault(_);
+  require('../../../backend/Models/profileModel');
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\ViewProfile.jsx", _s = $RefreshSig$();
+  const app = _Default.default();
+  function ViewProfile() {
+    _s();
+    const [profiles, setprofile] = _react.useState([{
+      name: '',
+      address: ''
+    }]);
+    _react.useEffect(() => {
+      fetch("/viewprofile").then(res => {
+        if (res.ok) {
+          return res.json();
+          console.log("success");
+        }
+      }).then(jsonRes => setprofile(jsonRes));
+    });
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 12
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 9
+        }
+      }, "Notes Page"), profiles.map(profile => {
+        /*#__PURE__*/_reactDefault.default.createElement("h1", {
+          __self: this,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 24,
+            columnNumber: 11
+          }
+        }, profile.address);
+        console.log(profiles);
+      }))
+    );
+  }
+  _s(ViewProfile, "lW+UasiTg1g5CxFl2GsyyLMhpAE=");
+  _c = ViewProfile;
+  exports.default = ViewProfile;
+  var _c;
+  $RefreshReg$(_c, "ViewProfile");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

@@ -1,0 +1,28 @@
+const express = require('express');
+const Profile = require('../Models/profileModel');
+const router =express.Router();
+const recordRoutes = express.Router();
+
+
+router.route("/profile").post((req, res) => {
+    const name = req.body.name;
+    const address = req.body.address;
+    const newReviewer = new Profile({
+        name,
+        address,
+    
+    });
+
+    newReviewer.save();
+});
+
+router.get('/',async(req, res) =>{
+try{
+    const profiles = await Profile.find()
+    res.json(profiles)
+}catch(err){
+    res.send('Error' + err)
+}
+})
+
+module.exports = router;

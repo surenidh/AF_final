@@ -1,0 +1,31 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\Research.jsx";
+  function Research() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5,
+          columnNumber: 8
+        }
+      }, "ssss")
+    );
+  }
+  _c = Research;
+  exports.default = Research;
+  var _c;
+  $RefreshReg$(_c, "Research");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

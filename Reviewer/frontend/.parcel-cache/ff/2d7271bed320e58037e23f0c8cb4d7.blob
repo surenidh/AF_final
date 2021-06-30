@@ -1,0 +1,73 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\ViewProfile.jsx", _s = $RefreshSig$();
+  function ViewProfile() {
+    _s();
+    const [profiles, setProfile] = _react.useState([{
+      name: '',
+      description: '',
+      contact: ''
+    }]);
+    _react.useEffect(() => {
+      fetch("/viewprofile").then(res => {
+        if (res.ok) {
+          return res.json();
+        }
+      }).then(jsonRes => setProfile(jsonRes));
+    });
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19,
+          columnNumber: 12
+        }
+      }, profiles.map(profile => /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 17
+        }
+      }, profile.name), "con", /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 17
+        }
+      }, profile.description), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25,
+          columnNumber: 17
+        }
+      }, profile.contact))))
+    );
+  }
+  _s(ViewProfile, "ubllHUtwI2QSOQ5/zlCJuFd7BKs=");
+  _c = ViewProfile;
+  exports.default = ViewProfile;
+  var _c;
+  $RefreshReg$(_c, "ViewProfile");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

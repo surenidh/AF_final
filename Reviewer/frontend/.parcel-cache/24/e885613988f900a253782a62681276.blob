@@ -1,0 +1,14 @@
+<div classname="content">
+<h1>Reviewer Login Page</h1>
+<form classname="frmLogin" method="POST" action="">
+    <div classname="form-group">
+        <input name="username" classname="form-control" autocomplete="off" placeholder=" Username">
+    </div>
+    <br>
+    <div classname="form-group">
+        <input name="password" classname="form-control" autocomplete="off" placeholder="Password">
+    </div>
+    <br>
+    <button onclick="render()" classname="btn btn-lg btn-info">LOGIN</button>
+</form>
+</div><script src="d6f04b17d81322bcc06494ddcef4df50"></script>

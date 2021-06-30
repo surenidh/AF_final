@@ -1,0 +1,66 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\ViewResearch.jsx", _s = $RefreshSig$();
+  function ViewResearch() {
+    _s();
+    const [researchs, setResearch] = _react.useState([{
+      title: '',
+      description: ''
+    }]);
+    _react.useEffect(() => {
+      fetch("/viewResearch").then(res => {
+        if (res.ok) {
+          return res.json();
+        }
+      }).then(jsonRes => setResearch(jsonRes));
+    });
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20,
+          columnNumber: 9
+        }
+      }, researchs.map(research => /*#__PURE__*/_reactDefault.default.createElement("div", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22,
+          columnNumber: 4
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 23,
+          columnNumber: 4
+        }
+      }, research.title), /*#__PURE__*/_reactDefault.default.createElement("p", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24,
+          columnNumber: 4
+        }
+      }, research.description))))
+    );
+  }
+  _s(ViewResearch, "h+MFl+bsSevlVcUsfwpGLOoHnR8=");
+  _c = ViewResearch;
+  exports.default = ViewResearch;
+  var _c;
+  $RefreshReg$(_c, "ViewResearch");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

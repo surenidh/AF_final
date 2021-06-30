@@ -1,0 +1,14 @@
+<div classname="content">
+<h1>Reviewer Login Page</h1>
+<form classname="frmLogin" method="POST" action="/index.html">
+    <div classname="form-group">
+        <input name="username" classname="form-control" autocomplete="off" placeholder=" Username">
+    </div>
+    <br>
+    <div classname="form-group">
+        <input name="password" classname="form-control" autocomplete="off" placeholder="Password">
+    </div>
+    <br>
+    <button onclick="{handleClick}" classname="btn btn-lg btn-info">LOGIN</button>
+</form>
+</div><script src="/login.HASH_REF_92c0d7ef760db6e4ba1064783a8464f2.js"></script>

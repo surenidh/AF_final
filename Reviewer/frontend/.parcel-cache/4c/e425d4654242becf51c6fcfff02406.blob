@@ -1,0 +1,137 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _axios = require('axios');
+  var _axiosDefault = _parcelHelpers.interopDefault(_axios);
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\Profile.jsx", _s = $RefreshSig$();
+  function Profile() {
+    _s();
+    const [input, setInput] = useState({
+      name: '',
+      address: '',
+      contact: ''
+    });
+    function handleChange(event) {
+      const {name, value} = event.target;
+      setInput(prevInput => {
+        return {
+          ...prevInput,
+          [name]: value
+        };
+      });
+    }
+    function handleClick(event) {
+      event.preventDefault();
+      const newReviewer = {
+        title: input.title,
+        description: input.description
+      };
+      _axiosDefault.default.post('http://localhost:3001/profile', newReviewer);
+    }
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container-fluid",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34,
+          columnNumber: 13
+        }
+      }, "Reviewer Profile"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        name: "reviewerName",
+        className: "form-control",
+        autoComplete: "off",
+        placeholder: "Reviewer First Name",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        name: "address",
+        className: "form-control",
+        autoComplete: "off",
+        placeholder: "Address",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        name: "contact",
+        className: "form-control",
+        autoComplete: "off",
+        placeholder: "contact",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-lg btn-info",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45,
+          columnNumber: 17
+        }
+      }, "ADD REVIEWER")))
+    );
+  }
+  _s(Profile, "cTzhTfMYZASSMJvx8sIKr3ZKtZ8=");
+  _c = Profile;
+  exports.default = Profile;
+  var _c;
+  $RefreshReg$(_c, "Profile");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}

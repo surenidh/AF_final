@@ -1,0 +1,111 @@
+var helpers = require("../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+try {
+  var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+  _parcelHelpers.defineInteropFlag(exports);
+  var _react = require('react');
+  var _reactDefault = _parcelHelpers.interopDefault(_react);
+  var _jsxFileName = "C:\\Users\\Gapstars\\Desktop\\myProject\\Reviewer\\frontend\\src\\Components\\Profile.jsx";
+  function Profile() {
+    return (
+      /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "container-fluid",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5,
+          columnNumber: 9
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("h1", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6,
+          columnNumber: 13
+        }
+      }, "Reviewer Profile"), /*#__PURE__*/_reactDefault.default.createElement("form", {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7,
+          columnNumber: 13
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        name: "reviewerName",
+        className: "form-control",
+        autoComplete: "off",
+        placeholder: "Reviewer First Name",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 11,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        name: "address",
+        className: "form-control",
+        autoComplete: "off",
+        placeholder: "Address",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 12,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("div", {
+        className: "form-group",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/_reactDefault.default.createElement("input", {
+        name: "contact",
+        className: "form-control",
+        autoComplete: "off",
+        placeholder: "Address",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15,
+          columnNumber: 21
+        }
+      })), /*#__PURE__*/_reactDefault.default.createElement("button", {
+        className: "btn btn-lg btn-info",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17,
+          columnNumber: 17
+        }
+      }, "ADD REVIEWER")))
+    );
+  }
+  _c = Profile;
+  exports.default = Profile;
+  var _c;
+  $RefreshReg$(_c, "Profile");
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
